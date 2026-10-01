@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Sinh viên PTIT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Menu -->
+    <header>
+        <div class="logo">MyPortfolio</div>
+        <nav>
+            <!-- Nút hamburger cho mobile -->
+            <button class="hamburger-btn" aria-label="Menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#skills">Kỹ năng</a></li>
+                <li><a href="#projects">Dự án</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+        <!-- Nút chuyển đổi Dark/Light mode -->
+        <button id="theme-toggle">🌙/☀️</button>
+    </header>
+
+    <!-- Phần Giới thiệu -->
+<section id="about">
+    <h1>Giới thiệu bản thân</h1>
+    <div class="about-content">
+        <!-- Khối Học thuật -->
+        <div class="about-block">
+            <h3>Thông tin cá nhân</h3>
+            <ul class="professional-list">
+                <li><strong>Họ và tên:</strong> Đào Thế Mạnh.</li>
+                <li><strong>Năm sinh:</strong> 2007.</li>
+                <li><strong>Sinh viên Công nghệ Thông tin:</strong> Đang theo học tại Học viện Công nghệ Bưu chính Viễn thông (PTIT).</li>
+                <li><strong>Email:</strong> Whitewolf1292007@gmail.com</li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/manh-dao-the-145425385/?isSelfProfile=true" target="_blank">LinkedIn Profile</a></li>
+            </ul>
+        </div>
+
+        <!-- Khối Sở thích -->
+        <div class="about-block">
+            <h3>Đời sống bên lề</h3>
+            <ul class="professional-list">
+                <li><strong>Nền tảng Tự nhiên:</strong> Là cựu học sinh chuyên Lý HSGS, HSG Tp.HaNoi.</li>
+                <li><strong>Thể thao :</strong> Biết chơi nhiều bộ môn: Cầu Lông, Bóng rô, Bơi, Bouldering và thường xuyên đi Trekking .</li>
+                <li><strong>Gia Sư:</strong> Gia sư Toán Vật lý THCS/THPT, Vật lý chuyên ở Hà Nội.</li>
+                <li><strong>Shop bán hàng:</strong> Có <a href="https://www.instagram.com/turtle.giaycaulong/" target="_blank" >Shop bán giày cầu lông 2hand</a> quy mô nhỏ.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+    <!-- Danh sách kỹ năng -->
+    <section id="skills">
+        <h2>Kỹ năng Lập trình & Công cụ</h2>
+        <ul class="skills-list">
+            <li>Python, HTML, CSS, JavaScript </li>
+            <li>Vibe code</li>
+            <li>Cơ sở dữ liệu: SQL, Thiết kế ERD</li>
+            <li>Công cụ: VS Code, Git/GitHub, LaTeX (Overleaf)</li>
+        </ul>
+    </section>
+
+    <!-- Danh sách dự án -->
+    <section id="projects">
+        <h2>Các dự án tiêu biểu</h2>
+        <div class="projects-grid">
+            <!-- Dự án 1 -->
+            <a href="https://github.com/daothemanhhsgs/TurtleRun-Python" target="_blank" class="project-card">
+                <h3>Game 2D cổ điển</h3>
+                <p>.Một trò chơi offline qua màn cơ bản ứng dụng kiến thức về mảng, tọa độ, và lập trình hướng đối tượng.</p>
+            </a>
+
+            <!-- Dự án 2 -->
+            <a href="https://github.com/daothemanhhsgs/Authentication-Module" target="_blank" class="project-card">
+                <h3>Authentication Module</h3>
+                <p>Module xác thực đăng nhập frontend cho hệ thống quản lý học tập , mô phỏng trạng thái người dùng qua LocalStorage.</p>
+            </a>
+
+            <!-- Dự án 3 -->
+            <a href="https://github.com/daothemanhhsgs/Shoe-Hunter" target="_blank" class="project-card">
+                <h3>AI Shoe Classifier</h3>
+                <p>Mô hình thị giác máy tính nhận diện và phân loại giày cầu lông secondhand (Yonex, Mizuno, Li-Ning). Huấn luyện bằng Roboflow và Google Colab.</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Form liên hệ -->
+    <section id="contact">
+        <h2>Liên hệ với mình</h2>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Họ và tên:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Lời nhắn:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Gửi tin nhắn</button>
+        </form>
+        <p id="form-feedback" style="display:none;"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="current-year"></span></p>
+        <div class="social-links">
+            <a href="https://github.com/daothemanhhsgs" target="_blank">GitHub</a>
+            <a href="https://www.facebook.com/themanh.dao.376/" target="_blank">Facebook</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
